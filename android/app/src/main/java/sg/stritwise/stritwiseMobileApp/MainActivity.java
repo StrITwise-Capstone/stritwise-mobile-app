@@ -1,4 +1,4 @@
-package com.example.stritwisemobileapp;
+package sg.stritwise.stritwiseMobileApp;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
