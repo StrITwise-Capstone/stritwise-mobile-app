@@ -3,8 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 
+/// {@category Widget}
+/// Drawer for Game Master (GM).
 class GameMasterDrawer extends StatelessWidget {
+  /// User name.
   final String name;
+
+  /// User role.
   final String role;
 
   GameMasterDrawer({

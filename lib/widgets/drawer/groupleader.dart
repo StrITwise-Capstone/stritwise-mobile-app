@@ -5,8 +5,13 @@ import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 
 import '../../util/auth.dart';
 
+/// {@category Widget}
+/// Drawer for Group Leader (GL).
 class GroupLeaderDrawer extends StatelessWidget {
+  /// User name.
   final String name;
+
+  /// User role.
   final String role;
 
   GroupLeaderDrawer({

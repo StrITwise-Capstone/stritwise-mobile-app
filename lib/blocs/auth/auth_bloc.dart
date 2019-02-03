@@ -6,7 +6,12 @@ import 'auth_event.dart';
 import 'auth_state.dart';
 import 'user_type.dart';
 
+/// {@category BLOC}
+/// Auth business logic component.
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
+  /// Sign in user using email.
+  ///
+  /// Sign in user with [email] and [password] respectively.
   Future<void> handleSignInEmail(String email, String password) async {
     try {
       FirebaseUser firebaseUser =
@@ -20,15 +25,18 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
   }
 
+  /// Get firebase user information and save it to auth state.
   Future<void> setUser(FirebaseUser firebaseUser) async {
     String eventId = await _getEventId();
-    Map<String, dynamic> result = await _getUserDetail(eventId, firebaseUser.uid);
+    Map<String, dynamic> result =
+        await _getUserDetail(eventId, firebaseUser.uid);
     dispatch(SaveFirebaseUserEvent(firebaseUser));
     dispatch(SaveUserTypeEvent(result['userType']));
     dispatch(SaveEventIdEvent(eventId));
     dispatch(SaveDataEvent(result['data']));
   }
 
+  /// Retrieve current event.
   Future<String> _getEventId() async {
     QuerySnapshot snapshot = await Firestore.instance
         .collection('/events')
@@ -43,7 +51,14 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     return snapshot.documents[0].documentID;
   }
 
-  Future<Map<String, dynamic>> _getUserDetail(String eventId, String userUid) async {
+  /// Retrieve user details and save it to auth state.
+  ///
+  /// Returns result object with both type and data field. Type field may
+  /// contain either [UserType.Student], [UserType.GameMaster], or
+  /// [UserType.GroupLeader]. Data field will store the additional information
+  /// retrieved from firestore.
+  Future<Map<String, dynamic>> _getUserDetail(
+      String eventId, String userUid) async {
     Map<String, dynamic> result = {};
 
     // Check Students
@@ -68,6 +83,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     return result;
   }
 
+  /// Sign user out of firebase instance.
   void handleSignOut() async {
     await FirebaseAuth.instance.signOut();
     dispatch(SaveFirebaseUserEvent(null));

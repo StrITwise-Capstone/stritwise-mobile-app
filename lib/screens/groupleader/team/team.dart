@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../widgets/drawer/drawer.dart';
 
+/// {@category Screen}
+/// WIP: To be implemented.
 class TeamScreen extends StatefulWidget {
   @override
   _TeamScreenState createState() => _TeamScreenState();

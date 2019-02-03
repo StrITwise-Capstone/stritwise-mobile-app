@@ -5,20 +5,22 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 
+/// {@category Screen}
+/// Widget that shows team's current point.
 class MyPoint extends StatefulWidget {
   @override
   _MyPointState createState() => _MyPointState();
 }
 
 class _MyPointState extends State<MyPoint> {
-
+  /// Initially content is loading.
   Widget _pointsText = CircularProgressIndicator();
 
   void _loadPoints(AuthState state) async {
     DocumentSnapshot doc = await Firestore.instance
         .document('/events/${state.eventId}/teams/${state.data['team_id']}')
         .get();
-    if(this.mounted) {
+    if (this.mounted) {
       setState(() {
         _pointsText = Text(
           doc.data['credit'].toString(),

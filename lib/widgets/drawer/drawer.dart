@@ -9,7 +9,12 @@ import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 import 'package:stritwise_mobile_app/blocs/auth/user_type.dart';
 
+/// {@category Widget}
+/// Returns application drawer.
 class DrawerGenerator extends StatelessWidget {
+  /// Generates drawer
+  ///
+  /// Requires [UserType] and [name]. Returns a [Drawer] widget.
   Widget _generateDrawer(UserType userType, String name) {
     switch (userType) {
       case UserType.Student:
@@ -20,8 +25,8 @@ class DrawerGenerator extends StatelessWidget {
         return GroupLeaderDrawer(name: name);
       default:
         return GroupLeaderDrawer(
-          name: 'An error has occured.',
-          role: 'ERROR',
+          name: 'Error.',
+          role: 'Application requires active internet connection.',
         );
     }
   }
@@ -31,8 +36,13 @@ class DrawerGenerator extends StatelessWidget {
     return BlocBuilder(
       bloc: BlocProvider.of<AuthBloc>(context),
       builder: (BuildContext context, AuthState state) {
-        return _generateDrawer(state.userType,
-            state.data['first_name'] + ' ' + state.data['last_name']);
+        String name = '';
+
+        if (state.data != null) {
+          name = state.data['first_name'] + ' ' + state.data['last_name'];
+        }
+
+        return _generateDrawer(state.userType, name);
       },
     );
   }

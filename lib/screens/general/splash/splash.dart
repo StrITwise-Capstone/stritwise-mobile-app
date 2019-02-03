@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// {@category Screen}
+/// Loading splash screen.
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -18,7 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/logo.gif',
               width: MediaQuery.of(context).size.width * 0.8,
             ),
-            SizedBox(height: 10.0,),
+            SizedBox(
+              height: 10.0,
+            ),
             Text('Loading Content...'),
           ],
         ),

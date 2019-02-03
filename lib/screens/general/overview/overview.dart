@@ -8,16 +8,18 @@ import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 import 'package:stritwise_mobile_app/blocs/auth/user_type.dart';
 
+/// {@category Screen}
+/// Screen where overview is shown.
 class OverviewScreen extends StatefulWidget {
   @override
   _OverviewScreenState createState() => _OverviewScreenState();
 }
 
 class _OverviewScreenState extends State<OverviewScreen> {
-
   List<Widget> _generateWidgetList(AuthState state) {
     List<Widget> wigetList = [];
-    if (state.userType == UserType.Student || state.userType == UserType.GroupLeader) {
+    if (state.userType == UserType.Student ||
+        state.userType == UserType.GroupLeader) {
       wigetList.add(MyPoint());
     }
     wigetList.add(TopTeam());

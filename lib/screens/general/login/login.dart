@@ -4,12 +4,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../blocs/auth/auth_state.dart';
 import '../../../blocs/auth/auth_bloc.dart';
 
+/// {@category Screen}
+/// Login screen.
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  /// Data of form is stored and initialised in this variable.
   final Map<String, dynamic> _formData = {
     'email': null,
     'password': null,
@@ -54,13 +57,18 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
+  /// Handles onClick.
+  ///
+  /// Parameters are the [BuildContext], and [AuthState] from BLOC.
   void _handleLogin(BuildContext context, AuthState state) {
     _formKey.currentState.save();
     if (_formKey.currentState.validate()) {
-      BlocProvider.of<AuthBloc>(context).handleSignInEmail(
+      BlocProvider.of<AuthBloc>(context)
+          .handleSignInEmail(
         _formData['email'],
         _formData['password'],
-      ).then((value) {
+      )
+          .then((value) {
         Navigator.pushReplacementNamed(context, '/general/overview');
       }).catchError((e) {
         Scaffold.of(context).showSnackBar(SnackBar(

@@ -3,8 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 
+/// {@category Widget}
+/// Drawer for Student (participant).
 class StudentDrawer extends StatelessWidget {
+  /// User name.
   final String name;
+
+  /// User role.
   final String role;
 
   StudentDrawer({

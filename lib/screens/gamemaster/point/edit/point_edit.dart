@@ -7,7 +7,10 @@ import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 import 'package:stritwise_mobile_app/models/credit_transaction.dart';
 import 'package:stritwise_mobile_app/util/helper.dart';
 
+/// {@category Screen}
+/// Screen where points are edited.
 class PointEditScreen extends StatefulWidget {
+  /// Team ID of the team points to edit.
   final String teamId;
 
   PointEditScreen(this.teamId);
@@ -17,22 +20,21 @@ class PointEditScreen extends StatefulWidget {
 }
 
 class _PointEditScreenState extends State<PointEditScreen> {
+  /// Data of form is stored and initialised in this variable.
   final Map<String, dynamic> _formData = {
     'points': 0,
   };
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
+  /// Initially content is loading.
   Widget _content = Center(
     child: CircularProgressIndicator(),
   );
 
   Widget _buildPointsTextField() {
     return Container(
-      width: MediaQuery
-          .of(context)
-          .size
-          .width * 0.6,
+      width: MediaQuery.of(context).size.width * 0.6,
       child: TextFormField(
         decoration: InputDecoration(
           labelText: 'Points Modified',
@@ -55,7 +57,12 @@ class _PointEditScreenState extends State<PointEditScreen> {
     );
   }
 
-  void _handlePointModified(BuildContext context, AuthState state, int creditModifier) {
+  /// Handles onClick.
+  ///
+  /// Parameters are the [BuildContext], [AuthState] from BLOC, and
+  /// [creditModifier] which may be -1 or 1.
+  void _handlePointModified(
+      BuildContext context, AuthState state, int creditModifier) {
     _formKey.currentState.save();
     if (_formKey.currentState.validate()) {
       CollectionReference creditCollection = Firestore.instance.collection(
@@ -73,6 +80,7 @@ class _PointEditScreenState extends State<PointEditScreen> {
     }
   }
 
+  /// Loads information of team and points.
   Future<Widget> _informationBar(DocumentSnapshot doc) async {
     String schoolName = await _fetchSchoolName(doc.data['school_id']);
     return Row(
@@ -109,7 +117,7 @@ class _PointEditScreenState extends State<PointEditScreen> {
 
   Future<String> _fetchSchoolName(String school_id) async {
     DocumentSnapshot documentSnapshot =
-    await Firestore.instance.document('/schools/${school_id}').get();
+        await Firestore.instance.document('/schools/${school_id}').get();
     return documentSnapshot.data['name'];
   }
 
@@ -175,10 +183,7 @@ class _PointEditScreenState extends State<PointEditScreen> {
                               children: <Widget>[
                                 ButtonTheme(
                                   minWidth:
-                                  MediaQuery
-                                      .of(context)
-                                      .size
-                                      .width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.4,
                                   height: 50.0,
                                   child: RaisedButton(
                                       color: Colors.green[900],
@@ -186,14 +191,12 @@ class _PointEditScreenState extends State<PointEditScreen> {
                                         'Add',
                                         style: TextStyle(color: Colors.white),
                                       ),
-                                      onPressed: () => _handlePointModified(context, state, 1)),
+                                      onPressed: () => _handlePointModified(
+                                          context, state, 1)),
                                 ),
                                 ButtonTheme(
                                   minWidth:
-                                  MediaQuery
-                                      .of(context)
-                                      .size
-                                      .width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.4,
                                   height: 50.0,
                                   child: RaisedButton(
                                       color: Colors.red[900],
@@ -201,8 +204,8 @@ class _PointEditScreenState extends State<PointEditScreen> {
                                         'Subtract',
                                         style: TextStyle(color: Colors.white),
                                       ),
-                                      onPressed: () =>
-                                          _handlePointModified(context, state, -1)),
+                                      onPressed: () => _handlePointModified(
+                                          context, state, -1)),
                                 ),
                               ],
                             );

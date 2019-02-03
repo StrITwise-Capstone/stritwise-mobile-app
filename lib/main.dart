@@ -16,9 +16,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-
   Map<String, WidgetBuilder> _getRoutes(BuildContext context) {
-    return <String, WidgetBuilder> {
+    return <String, WidgetBuilder>{
       '/': (context) => Auth.handleCurrentScreen(),
       '/general/login': (context) => LoginScreen(),
       '/general/overview': (context) => OverviewScreen(),
@@ -35,8 +34,7 @@ class MyApp extends StatelessWidget {
       if (pathElements[1] == 'point') {
         if (pathElements[2] == 'edit') {
           return MaterialPageRoute<bool>(
-            builder: (BuildContext context) =>
-                PointEditScreen(pathElements[3]),
+            builder: (BuildContext context) => PointEditScreen(pathElements[3]),
             settings: settings,
           );
         }
@@ -68,5 +66,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
 }

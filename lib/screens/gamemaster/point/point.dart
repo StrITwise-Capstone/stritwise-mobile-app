@@ -6,13 +6,15 @@ import '../../../widgets/drawer/drawer.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 
+/// {@category Screen}
+/// Screen where points are listed.
 class PointScreen extends StatefulWidget {
   @override
   _PointScreenState createState() => _PointScreenState();
 }
 
 class _PointScreenState extends State<PointScreen> {
-
+  /// Initially content is loading.
   Widget _content = Center(
     child: CircularProgressIndicator(),
   );

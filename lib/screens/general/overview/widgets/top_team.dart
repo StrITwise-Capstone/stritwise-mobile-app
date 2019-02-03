@@ -5,12 +5,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_bloc.dart';
 import 'package:stritwise_mobile_app/blocs/auth/auth_state.dart';
 
+/// {@category Screen}
+/// Widget that shows team's current point.
 class TopTeam extends StatefulWidget {
   @override
   _TopTeamState createState() => _TopTeamState();
 }
 
 class _TopTeamState extends State<TopTeam> {
+  /// Initially content is loading.
   List<Widget> _data = []..add(CircularProgressIndicator());
 
   void _loadData(AuthState state) async {
