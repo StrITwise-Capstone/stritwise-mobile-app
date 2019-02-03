@@ -1,0 +1,185 @@
+[
+  {
+    "name": "Auth",
+    "qualifiedName": "auth.Auth",
+    "href": "util_auth/Auth-class.html",
+    "type": "class",
+    "categories": [
+      "Util"
+    ]
+  },
+  {
+    "name": "AuthBloc",
+    "qualifiedName": "auth_bloc.AuthBloc",
+    "href": "blocs_auth_auth_bloc/AuthBloc-class.html",
+    "type": "class",
+    "categories": [
+      "BLOC"
+    ]
+  },
+  {
+    "name": "AuthEvent",
+    "qualifiedName": "auth_event.AuthEvent",
+    "href": "blocs_auth_auth_event/AuthEvent-class.html",
+    "type": "class",
+    "categories": [
+      "BLOC"
+    ],
+    "subcategories": [
+      "BLOCAuth"
+    ]
+  },
+  {
+    "name": "AuthState",
+    "qualifiedName": "auth_state.AuthState",
+    "href": "blocs_auth_auth_state/AuthState-class.html",
+    "type": "class",
+    "categories": [
+      "BLOC"
+    ]
+  },
+  {
+    "name": "CreditTransactionModel",
+    "qualifiedName": "credit_transaction.CreditTransactionModel",
+    "href": "models_credit_transaction/CreditTransactionModel-class.html",
+    "type": "class",
+    "categories": [
+      "Model"
+    ]
+  },
+  {
+    "name": "DrawerGenerator",
+    "qualifiedName": "drawer.DrawerGenerator",
+    "href": "widgets_drawer_drawer/DrawerGenerator-class.html",
+    "type": "class",
+    "categories": [
+      "Widget"
+    ]
+  },
+  {
+    "name": "GameMasterDrawer",
+    "qualifiedName": "gamemaster.GameMasterDrawer",
+    "href": "widgets_drawer_gamemaster/GameMasterDrawer-class.html",
+    "type": "class",
+    "categories": [
+      "Widget"
+    ]
+  },
+  {
+    "name": "GroupLeaderDrawer",
+    "qualifiedName": "groupleader.GroupLeaderDrawer",
+    "href": "widgets_drawer_groupleader/GroupLeaderDrawer-class.html",
+    "type": "class",
+    "categories": [
+      "Widget"
+    ]
+  },
+  {
+    "name": "Helper",
+    "qualifiedName": "helper.Helper",
+    "href": "util_helper/Helper-class.html",
+    "type": "class",
+    "categories": [
+      "Util"
+    ]
+  },
+  {
+    "name": "LoginScreen",
+    "qualifiedName": "login.LoginScreen",
+    "href": "screens_general_login_login/LoginScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "BlocsManager",
+    "qualifiedName": "manager.BlocsManager",
+    "href": "blocs_manager/BlocsManager-class.html",
+    "type": "class",
+    "categories": [
+      "BLOC"
+    ]
+  },
+  {
+    "name": "MyPoint",
+    "qualifiedName": "my_point.MyPoint",
+    "href": "screens_general_overview_widgets_my_point/MyPoint-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "OverviewScreen",
+    "qualifiedName": "overview.OverviewScreen",
+    "href": "screens_general_overview_overview/OverviewScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "PointScreen",
+    "qualifiedName": "point.PointScreen",
+    "href": "screens_gamemaster_point_point/PointScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "PointEditScreen",
+    "qualifiedName": "point_edit.PointEditScreen",
+    "href": "screens_gamemaster_point_edit_point_edit/PointEditScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "SplashScreen",
+    "qualifiedName": "splash.SplashScreen",
+    "href": "screens_general_splash_splash/SplashScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "StudentDrawer",
+    "qualifiedName": "student.StudentDrawer",
+    "href": "widgets_drawer_student/StudentDrawer-class.html",
+    "type": "class",
+    "categories": [
+      "Widget"
+    ]
+  },
+  {
+    "name": "TeamScreen",
+    "qualifiedName": "team.TeamScreen",
+    "href": "screens_groupleader_team_team/TeamScreen-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "TopTeam",
+    "qualifiedName": "top_team.TopTeam",
+    "href": "screens_general_overview_widgets_top_team/TopTeam-class.html",
+    "type": "class",
+    "categories": [
+      "Screen"
+    ]
+  },
+  {
+    "name": "UserType",
+    "qualifiedName": "user_type.UserType",
+    "href": "blocs_auth_user_type/UserType-class.html",
+    "type": "enum",
+    "categories": [
+      "BLOC"
+    ]
+  }
+]

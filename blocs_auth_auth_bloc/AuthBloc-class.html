@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the AuthBloc class from the auth_bloc library, for the Dart programming language.">
+  <title>AuthBloc class - auth_bloc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">stritwise_mobile_app</a></li>
+    <li><a href="blocs_auth_auth_bloc/blocs_auth_auth_bloc-library.html">auth_bloc</a></li>
+    <li class="self-crumb">AuthBloc class</li>
+  </ol>
+  <div class="self-name">AuthBloc</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>auth_bloc library</h5>
+    <ol>
+      <li class="section-title"><a href="blocs_auth_auth_bloc/blocs_auth_auth_bloc-library.html#classes">Classes</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc-class.html">AuthBloc</a></li>
+    
+    
+    
+    
+    
+    
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <h1>AuthBloc class   <span class="category bloc cp-0 linked" title="This is part of the BLOC Topic."><a href="topics/BLOC-topic.html">BLOC</a></span>
+</h1>
+
+    <section class="desc markdown">
+      <p>Auth business logic component.</p>
+    </section>
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="AuthBloc" class="callable">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/AuthBloc.html">AuthBloc</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="initialState" class="property">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/initialState.html">initialState</a></span>
+          <span class="signature">&#8594; <a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span> 
+        </dt>
+        <dd>
+          Returns the <code>State</code> before any <code>Event</code>s have been <code>dispatched</code>.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="currentState" class="property inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/currentState.html">currentState</a></span>
+          <span class="signature">&#8594; <a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span> 
+        </dt>
+        <dd class="inherited">
+          Returns the current <code>State</code> of the <code>Bloc</code>.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span> 
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="blocs_auth_auth_bloc/AuthBloc/hashCode.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span> 
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="state" class="property inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/state.html">state</a></span>
+          <span class="signature">&#8594; Stream<span class="signature">&lt;<wbr><span class="type-parameter"><a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span>&gt;</span></span> 
+        </dt>
+        <dd class="inherited">
+          Returns <code>Stream</code> of <code>State</code>s.
+Consumed by <code>BlocBuilder</code>.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="handleSignInEmail" class="callable">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/handleSignInEmail.html">handleSignInEmail</a></span><span class="signature">(<wbr><span class="parameter" id="handleSignInEmail-param-email"><span class="type-annotation">String</span> <span class="parameter-name">email</span>, </span> <span class="parameter" id="handleSignInEmail-param-password"><span class="type-annotation">String</span> <span class="parameter-name">password</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+          </dt>
+        <dd>
+          Sign in user using email. <a href="blocs_auth_auth_bloc/AuthBloc/handleSignInEmail.html">[...]</a>
+          
+</dd>
+        <dt id="handleSignOut" class="callable">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/handleSignOut.html">handleSignOut</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+          </dt>
+        <dd>
+          Sign user out of firebase instance.
+          
+</dd>
+        <dt id="mapEventToState" class="callable">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/mapEventToState.html">mapEventToState</a></span><span class="signature">(<wbr><span class="parameter" id="mapEventToState-param-currentState"><span class="type-annotation"><a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span> <span class="parameter-name">currentState</span>, </span> <span class="parameter" id="mapEventToState-param-event"><span class="type-annotation"><a href="blocs_auth_auth_event/AuthEvent-class.html">AuthEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; Stream<span class="signature">&lt;<wbr><span class="type-parameter"><a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span>&gt;</span></span>
+          </span>
+          </dt>
+        <dd>
+          Must be implemented when a class extends <code>Bloc</code>.
+Takes the current <code>state</code> and incoming <code>event</code> as arguments.
+<code>mapEventToState</code> is called whenever an <code>Event</code> is <code>dispatched</code> by the presentation layer.
+<code>mapEventToState</code> must convert that <code>Event</code>, along with the current <code>State</code>, into a new <code>State</code>
+and return the new <code>State</code> in the form of a <code>Stream</code> which is consumed by the presentation layer.
+          
+</dd>
+        <dt id="setUser" class="callable">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/setUser.html">setUser</a></span><span class="signature">(<wbr><span class="parameter" id="setUser-param-firebaseUser"><span class="type-annotation">FirebaseUser</span> <span class="parameter-name">firebaseUser</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+          </dt>
+        <dd>
+          Get firebase user information and save it to auth state.
+          
+</dd>
+        <dt id="dispatch" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/dispatch.html">dispatch</a></span><span class="signature">(<wbr><span class="parameter" id="dispatch-param-event"><span class="type-annotation"><a href="blocs_auth_auth_event/AuthEvent-class.html">AuthEvent</a></span> <span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Takes an <code>Event</code> and triggers <code>mapEventToState</code>.
+<code>Dispatch</code> may be called from the presentation layer or from within the <code>Bloc</code>.
+<code>Dispatch</code> notifies the <code>Bloc</code> of a new <code>Event</code>.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="dispose" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/dispose.html">dispose</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Closes the <code>Event</code> and <code>State</code> <code>Stream</code>s.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="blocs_auth_auth_bloc/AuthBloc/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="onTransition" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/onTransition.html">onTransition</a></span><span class="signature">(<wbr><span class="parameter" id="onTransition-param-transition"><span class="type-annotation">Transition<span class="signature">&lt;<wbr><span class="type-parameter"><a href="blocs_auth_auth_event/AuthEvent-class.html">AuthEvent</a></span>, <span class="type-parameter"><a href="blocs_auth_auth_state/AuthState-class.html">AuthState</a></span>&gt;</span></span> <span class="parameter-name">transition</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Called whenever a <code>Transition</code> occurs with the given <code>Transition</code>.
+A <code>Transition</code> occurs when a new <code>Event</code> is dispatched and <code>mapEventToState</code> executed.
+<code>onTransition</code> is called before a <code>Bloc</code>'s <code>State</code> has been updated.
+A great spot to add logging/analytics.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="transform" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/transform.html">transform</a></span><span class="signature">(<wbr><span class="parameter" id="transform-param-events"><span class="type-annotation">Stream<span class="signature">&lt;<wbr><span class="type-parameter"><a href="blocs_auth_auth_event/AuthEvent-class.html">AuthEvent</a></span>&gt;</span></span> <span class="parameter-name">events</span></span>)
+            <span class="returntype parameter">&#8594; Stream<span class="signature">&lt;<wbr><span class="type-parameter"><a href="blocs_auth_auth_event/AuthEvent-class.html">AuthEvent</a></span>&gt;</span></span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Transform the <code>Stream&lt;Event&gt;</code> before <code>mapEventToState</code> is called.
+This allows for operations like <code>distinct()</code>, <code>debounce()</code>, etc... to be applied.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="blocs_auth_auth_bloc/AuthBloc/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          The equality operator. <a href="blocs_auth_auth_bloc/AuthBloc/operator_equals.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="blocs_auth_auth_bloc/AuthBloc-class.html#constructors">Constructors</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/AuthBloc.html">AuthBloc</a></li>
+    
+      <li class="section-title">
+        <a href="blocs_auth_auth_bloc/AuthBloc-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/initialState.html">initialState</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/currentState.html">currentState</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/state.html">state</a></li>
+    
+      <li class="section-title"><a href="blocs_auth_auth_bloc/AuthBloc-class.html#instance-methods">Methods</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/handleSignInEmail.html">handleSignInEmail</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/handleSignOut.html">handleSignOut</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/mapEventToState.html">mapEventToState</a></li>
+      <li><a href="blocs_auth_auth_bloc/AuthBloc/setUser.html">setUser</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/dispatch.html">dispatch</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/dispose.html">dispose</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/onTransition.html">onTransition</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/toString.html">toString</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/transform.html">transform</a></li>
+    
+      <li class="section-title inherited"><a href="blocs_auth_auth_bloc/AuthBloc-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="blocs_auth_auth_bloc/AuthBloc/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    stritwise_mobile_app 1.0.0+1
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
