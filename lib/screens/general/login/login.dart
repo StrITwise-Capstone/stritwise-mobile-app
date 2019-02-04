@@ -71,6 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
           .then((value) {
         Navigator.pushReplacementNamed(context, '/general/overview');
       }).catchError((e) {
+        BlocProvider.of<AuthBloc>(context).handleSignOut();
         Scaffold.of(context).showSnackBar(SnackBar(
           content: Text('Wrong Credentials! Please try again.'),
         ));
