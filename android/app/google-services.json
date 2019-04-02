@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544008143916",
+    "firebase_url": "https://stritwise-capstone-2018.firebaseio.com",
+    "project_id": "stritwise-capstone-2018",
+    "storage_bucket": "stritwise-capstone-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544008143916:android:558c63ba22f04fe3",
+        "android_client_info": {
+          "package_name": "sg.stritwise.stritwiseMobileApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544008143916-dv2boq3agtq0sradhkh7hbb4b59fmldq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOFoMUmoXRD3xotrYRxfQP11cbG13Ngyk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
